@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  background: #e7eaf2;
+  overflow-y: hidden;
+}
+body{
+  padding-right: 0!important;
+}
+#app {
+  width: 100%;
+  height: 100vh;
+}
+
+.el-main {
+  padding-bottom: 76px;
+}
+
+// 弹框样式
+.el-message-box {
+  width: 343px;
+  height: 210px;
+  background: #ffffff;
+  border-radius: 10px;
+
+  .el-message-box__header,
+  .el-message-box__title {
+    text-align: center;
+  }
+  .el-message-box__header {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    padding-bottom: 30px;
+  }
+  .el-message-box__message {
+    text-align: center;
+  }
+  .el-message-box__btns {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 30px;
+    button {
+      background: #999999;
+      color: #fff;
+      border: 0;
+      border-radius: 6px;
+      width: 76px;
+      height: 40px;
+    }
+    .el-button--primary {
+      background: #6563ff;
+      margin-right: 23px;
+    }
+  }
+}
+// 表格数据样式
+.el-table {
+  .el-table__header-wrapper {
+    tr,
+    th {
+      text-align: center;
+      color: #333333;
+      background: linear-gradient(to bottom, #f2f3f7, #dfe0e6);
+    }
+  }
+  .el-table__body-wrapper {
+    th,
+    tr,
+    td {
+      text-align: center;
+    }
+  }
+}
+
+button {
+  background: #663ee7;
+}
+.el-input__inner {
+  height: 32px;
+}
+.el-date-editor .el-range-separator {
+  display: inline-block;
+  width: 30px;
+  height: 32px;
+  line-height: 32px;
+}
+
+input:focus {
+  border-color: #6563ff !important;
+}
